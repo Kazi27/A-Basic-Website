@@ -1,2 +1,2 @@
-# A-Basic-Website-
+# A-Basic-Website
 Web Dev - Assignment 1 - Basic Website  
