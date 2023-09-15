@@ -1,12 +1,104 @@
-<!DOCTYPE html> <!-- ensures that the browser renders your webpage in the HTML5 mode -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- ensure proper character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- best practice, pages responsive & mobile-friendly-->
-    <title> Cars I love </title> <!-- title of webpage -->
-</head> 
-<body> <!-- content for your web page goes here -->
-    <h1>Cars I love</h1>
-    <p>a website by yours truly</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars I Love</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 0px; /* Adjust this value for vertical spacing */
+            margin-bottom: 0px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .image-text {
+            margin-top: 70px;
+        }
+
+        .heading {
+            font-size: 80px;
+            max-width: 50%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .website-text 
+        {
+            font-size: 40px; /* Adjust the font size as needed */
+        }
+
+        figure {
+            width: 50%; /* Adjust this value to change the width of each figure */
+            height: auto; /* Maintain aspect ratio */
+            display: inline-block; /* Display figures inline */
+        }
+
+        p 
+        {
+            margin-top: 0px; /* Adjust this value to reduce the spacing */
+            margin-bottom: 0px;
+        }
+
+        .large-caption 
+        {
+            font-size: 24px; /* Increase font size */
+            font-weight: bold; /* Add bold style */
+            color: gray; /* Change text color to blue */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Cars I Love</h1>
+    <p class="website-text">a website by yours truly</p>
+
+    <div class="container">
+        <figure class="image-container">
+            <img src="ferrari_f40.png" alt="Ferrari F40" class="image">
+            <figcaption class = "large-caption">Classic and Vintage</figcaption>
+        </figure>
+        <figure class="image-container">
+            <img src="porsche_rwb.png" alt="Porsche RWB" class="image">
+            <figcaption class = "large-caption">Modern and High-Performance</figcaption>
+        </figure>
+    </div>
 </body>
 </html>
+
+<!-- 
+Category 1: Classic and Vintage
+Datsun 240z
+Ferrari F40
+Mustang Fastback
+Honda NSX
+
+Category 2: Modern and High-Performance
+Aston Martin Vulcan
+Porsche RWB
+Nissan GTR
+Tesla Roadster 
+-->
