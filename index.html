@@ -3,97 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars I Love</title>
+    <title>Classic & Vintage</title>
     <style>
         body {
-            background-color: black;
-            color: red;
-            display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
+            background-color: rgb(0, 0, 0);
         }
-
-        .container {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin-top: 0px; /* Adjust this value for vertical spacing */
-            margin-bottom: 0px;
-        }
-
+        
         .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            max-width: 99%; 
+        }
+
+        .title {
+            color:red;
             text-align: center;
-            margin: 10px;
-        }
-
-        .image {
-            max-width: 80%;
-            height: auto;
-        }
-
-        .image-text {
-            margin-top: 70px;
-        }
-
-        .heading {
-            font-size: 80px;
-            max-width: 50%;
+            font-size: 60px;
+            margin-bottom: 0px;
             margin-top: 0px;
-            margin-bottom: 0px;
         }
 
-        .website-text 
-        {
-            font-size: 40px; /* Adjust the font size as needed */
+        .subtitle {
+            color: rgb(233, 157, 130);
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+            margin-top: 0px;
         }
 
-        figure {
-            width: 50%; /* Adjust this value to change the width of each figure */
-            height: auto; /* Maintain aspect ratio */
-            display: inline-block; /* Display figures inline */
+        .image-caption {
+            color:rgb(131, 12, 12);
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
         }
 
-        p 
-        {
-            margin-top: 0px; /* Adjust this value to reduce the spacing */
-            margin-bottom: 0px;
-        }
-
-        .large-caption 
-        {
-            font-size: 24px; /* Increase font size */
-            font-weight: bold; /* Add bold style */
-            color: gray; /* Change text color to blue */
+        .image-brief {
+            color:rgb(176, 69, 85);
+            text-align: center;
+            font-size: 20px;
         }
 
     </style>
 </head>
 <body>
-    <h1 class="heading">Cars I Love</h1>
-    <p class="website-text">a website by yours truly</p>
-
-    <div class="container">
-        <figure class="image-container">
-            <img src="ferrari_f40.png" alt="Ferrari F40" class="image">
-            <figcaption class = "large-caption">Classic and Vintage</figcaption>
-        </figure>
-        <figure class="image-container">
-            <img src="porsche_rwb.png" alt="Porsche RWB" class="image">
-            <figcaption class = "large-caption">Modern and High-Performance</figcaption>
-        </figure>
+    <h1 class="title">Cars I love</h1>
+    <h1 class="subtitle">A website by yours truly</h1>
+    <div class="image-container">
+        <div>
+            <img src="ferrari_f40.png" alt="ferrari_f40">
+            <a href="Classic-Vintage.html" class="image-caption">Classic & Vintage</a>
+            <h3 class="image-brief">Showcase: Ferrari F40</h3>
+        </div>
+        <div>
+            <img src="porsche_rwb.png" alt="porsche_rwb">
+            <a href="Classic-Vintage.html" class="image-caption">Modern & High-Performance</a>
+            <h3 class="image-brief">Showcase: Porsche RWB</h3>
+        </div>
     </div>
 </body>
-</html>
 
 <!-- 
 Category 1: Classic and Vintage
 Datsun 240z
 Ferrari F40
-Mustang Fastback
+Mustang Charge
 Honda NSX
 
 Category 2: Modern and High-Performance
