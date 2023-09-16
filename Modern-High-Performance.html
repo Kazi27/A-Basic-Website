@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic & Vintage</title>
+    <script src="randomBackground.js"></script>
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            transition: background-color 0.5s; /* Add smooth transition */
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            max-width: 99%; /* Adjust the width as needed */
+        }
+
+        .image-caption {
+            color:rgb(202, 33, 33);
+            text-align: center;
+        }
+
+        .image-brief {
+            color:rgb(176, 69, 85);
+            text-align: center;
+        }
+
+        .image-description {
+            color:rgb(191, 153, 158);
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto; /* Center the table horizontally */
+            margin-top: 20px; /* Adjust this for spacing */
+            color: white;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid rgb(234, 22, 22);
+        }
+
+        th, td {
+            color:rgb(127, 118, 118);
+            padding: 10px;
+        }
+
+        .dark-background {
+            background-color: rgb(20, 20, 20); /* Change to your desired dark color */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: rgb(54, 2, 2); /* Gray-colored button */
+            color: rgb(255, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div>
+            <img src="nissan_gtr.png" alt="Nissan GTR">
+            <h1 class="image-caption">Nissan GTR</h1>
+            <h3 class="image-brief">The Supercar Slayer</h3>
+            <p class="image-description">The Nissan GTR is a relentless force of power and precision. Originating from Japan, it's a machine that easily challenges the mightiest supercars from around the world. With its sleek design and aerodynamic contours, every inch of the GTR is engineered to conquer both the racetrack and the street where you probably saw this gorgeous beauty before. The iconic twin-turbo V6 engine roars to life, and as you grip the wheel, you're instantly aware that this is a car like no other if that wasn't obvious already. Its rarity adds to its mystique, a reminder that automotive greatness knows no bounds. </p>
+        </div>
+        <div>
+            <img src="astonmartin_vulcan.png" alt="Aston Martin Vulcan">
+            <h1 class="image-caption">Aston Martin Vulcan</h1>
+            <h3 class="image-brief">The Trackside Symphony</h3>
+            <p class="image-description">The Aston Martin Vulcan, a masterpiece of British engineering, is a symphony of power and artistry. Born to conquer the track, it's a rare breed with only a handful ever built. When you gaze upon its aggressive yet graceful design, you're transported into a world of pure automotive opulence. With a naturally aspirated V12 engine that generates spine-tingling horsepower, the Vulcan's thunderous exhaust note is music to any car lover's ears. As you slip into the driver's seat, you become part of a select few (and me in the future hopefully) who've experienced the pinnacle of track performance.
+            </p>
+        </div>
+        <div>
+            <img src="tesla_roadster.png" alt="Tesla Roadster">
+            <h1 class="image-caption">Tesla Roadster</h1>
+            <h3 class="image-brief">The Electric Revolution</h3>
+            <p class="image-description">The Tesla Roadster is a testament to the future of automotive innovation. With its roots in Silicon Valley, it's a car ushering in a new era of electrifying performance. The sleek, aerodynamic design of the Roadster is stunning and functional with it accelerating from 0 to 60 mph at jaw-dropping speed effortlessly. I've been in one prior and words don't do, how smooth it is nor just how fast the acceleration is, justice. Putting how I feel about Elon Musk aside, the Roadster's rarity as a pioneering electric car makes it a symbol of the electrifying revolution that's transforming the automotive world.</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Car</th>
+                <th>Origin</th>
+                <th>Time Period</th>
+                <th>0-60 Speed</th>
+                <th>Interesting Fact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nissan GTR</td>
+                <td>Japan</td>
+                <td>2007-present</td>
+                <td>2.9 seconds (approx.)</td>
+                <td>The Nissan GTR's chief engineer, Kazutoshi Mizuno's signature is on a plaque inside each car, adding a unique touch to every GTR!</td>
+            </tr>
+            <tr>
+                <td>Aston Martin Vulcan</td>
+                <td>United Kingdom</td>
+                <td>2016-2018</td>
+                <td>3.3 seconds (approx.)</td>
+                <td>Only 24 Aston Martin Vulcans were ever produced, making it an extremely valuable, exclusive, highly sought-after collectible supercar!</td>
+            </tr>
+            <tr>
+                <td>Tesla Roadster</td>
+                <td>United States</td>
+                <td>2017-present</td>
+                <td>1.9 seconds (approx. )</td>
+                <td>Elon Musk says that the upcoming Tesla Roadster will be equipped with rocket thrusters to provide short bursts of acceleration!</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Container for the button, now centered -->
+    <div class="button-container">
+        <!-- Button to change background color -->
+        <button class="button" id="changeBackgroundColorButton">Mess around with the colors!</button>
+        <button class="button" id="goHome">No, take me back home!</button>
+    </div>
+
+    <script src="goHome.js"></script>
+
+    <script>
+        // JavaScript code to change background color
+        const changeBackgroundColorButton = document.getElementById('changeBackgroundColorButton');
+        const body = document.body;
+
+        changeBackgroundColorButton.addEventListener('click', function() {
+            // Add the dark background class to the body
+            body.classList.add('dark-background');
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- 
+Category 2: Modern and High-Performance
+Aston Martin Vulcan
+Porsche RWB - done
+Nissan GTR
+Tesla Roadster 
+-->
