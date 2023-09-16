@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic & Vintage</title>
+    <script src="randomBackground.js"></script>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            transition: background-color 0.5s; /* Add smooth transition */
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            max-width: 99%; /* Adjust the width as needed */
+        }
+
+        .image-caption {
+            color:rgb(131, 12, 12);
+            text-align: center;
+        }
+
+        .image-brief {
+            color:rgb(176, 69, 85);
+            text-align: center;
+        }
+
+        .image-description {
+            color:rgb(191, 153, 158);
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto; /* Center the table horizontally */
+            margin-top: 20px; /* Adjust this for spacing */
+            color: white;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid rgb(234, 22, 22);
+        }
+
+        th, td {
+            color:rgb(127, 118, 118);
+            padding: 10px;
+        }
+
+        .dark-background {
+            background-color: rgb(20, 20, 20); /* Change to your desired dark color */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: rgb(54, 2, 2); /* Gray-colored button */
+            color: rgb(255, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div>
+            <img src="datsun_240z.png" alt="Datsun 240Z">
+            <h1 class="image-caption">Datsun 240Z</h1>
+            <h3 class="image-brief">The Epitome of Sports Car Elegance</h3>
+            <p class="image-description">The Datsun 240Z, my favorite of the bunch currently. Where do I even start? This is a car that's as rare as it is breathtaking, a sports car that's more than just a machine. This beauty hails from Japan, where every curve and contour was meticulously crafted to captivate hearts worldwide. Its timeless design, those sensual curves, and that iconic long hood – I don't know about you but they make my heart skip a beat. Its rarity only adds to its allure, a reminder that true elegance never goes out of style.</p>
+        </div>
+        <div>
+            <img src="mustang_charge.png" alt="Mustang Charge">
+            <h1 class="image-caption">Mustang Charge</h1>
+            <h3 class="image-brief">The Iconic American Muscle</h3>
+            <p class="image-description">The Mustang Charge is more than a car; it's an American legend. Born in the USA, it's a car that embodies the spirit of freedom and adventure. That fastback silhouette, the unmistakable galloping pony logo – it's unreal. I've had the privilege to drive one of these before and there's something about the engine rustling, hood vibrating, and stiffness that's really the icing on the cake. These are as rare as they are captivating and owning one is like holding a piece of automotive history in your hands.</p>
+        </div>
+        <div>
+            <img src="honda_nsx.png" alt="Honda NSX">
+            <h1 class="image-caption">Honda NSX</h1>
+            <h3 class="image-brief">The Pinnacle of Precision Engineering</h3>
+            <p class="image-description">The Honda NSX is a masterpiece hailing from the land of the rising sun. The NSX is a rarity, a gem that showcases Japan's commitment to pushing the boundaries of automotive excellence. Its striking design isn't just visually appealing; it's a harmonious fusion of form and function with tucked-in headlights and a low form. When you see the NSX, you're witnessing the culmination of passion and innovation, all neatly packaged into a marvelous car. It invokes various emotions in me personally.</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Car</th>
+                <th>Origin</th>
+                <th>Time Period</th>
+                <th>0-60 Speed</th>
+                <th>Interesting Fact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Datsun 240Z</td>
+                <td>Japan</td>
+                <td>1969-1978</td>
+                <td>8 seconds (approx.)</td>
+                <td>In Japan, the Datsun 240Z was known as the Nissan Fairlady Z based on the Broadway musical "My Fair Lady"!</td>
+            </tr>
+            <tr>
+                <td>Mustang Charge</td>
+                <td>USA</td>
+                <td>1964-present</td>
+                <td>Varies (depending on model)</td>
+                <td>The Mustang is credited for popularizing the "pony car" class, a term for affordable and stylish American sports cars!</td>
+            </tr>
+            <tr>
+                <td>Honda NSX</td>
+                <td>Japan</td>
+                <td>1990-present</td>
+                <td>3.1 seconds (latest model)</td>
+                <td>The NSX was one of the first cars to feature an all-aluminum monocoque body, reducing weight to enhance performance.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Container for the button, now centered -->
+    <div class="button-container">
+        <!-- Button to change background color -->
+        <button class="button" id="changeBackgroundColorButton">Mess around with the colors!</button>
+    </div>
+
+    <script>
+        // JavaScript code to change background color
+        const changeBackgroundColorButton = document.getElementById('changeBackgroundColorButton');
+        const body = document.body;
+
+        changeBackgroundColorButton.addEventListener('click', function() {
+            // Add the dark background class to the body
+            body.classList.add('dark-background');
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- 
+Category 1: Classic and Vintage
+Datsun 240z
+Mustang Charge
+Honda NSX
+Ferrari F40 - done
+-->
